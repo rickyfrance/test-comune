@@ -1,0 +1,11 @@
+name: Test sito comune
+
+on:
+  workflow_dispatch:
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Prova a collegarsi al sito del comune
+        run: curl -I --max-time 30 https://www.comune.cittadicastello.pg.it/
